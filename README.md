@@ -10,7 +10,7 @@ Un puntero es una variable que contiene la dirección de memoria de otra variabl
 
 La memoria dinámica, por otro lado, es un tipo de memoria que se asigna en tiempo de ejecución, en lugar de estar reservada de antemano. En C, puedes asignar memoria dinámica utilizando las funciones 'malloc', 'calloc' y 'realloc'.
 
-Un puntero es una variable que contiene la dirección de memoria de otra variable. En C, se utilizan los operadores '&' y '*' para trabajar con punteros.
+## Un puntero es una variable que contiene la dirección de memoria de otra variable. En C, se utilizan los operadores '&' y '*' para trabajar con punteros.
  El operador '&' se utiliza para obtener la dirección de memoria de una variable, mientras que el operador '*' (asterisco) se utiliza para acceder al valor almacenado en la dirección de memoria a la que apunta un puntero.
 La memoria dinámica, por otro lado, es un tipo de memoria que se asigna en tiempo de ejecución, en lugar de estar reservada de antemano.
  En C, puedes asignar memoria dinámica utilizando las funciones 'malloc', 'calloc' y 'realloc'. Cuando se asigna memoria dinámica, 
@@ -28,7 +28,7 @@ en C, la función malloc() se utiliza para asignar memoria dinámicamente durant
 La función malloc() reserva una cantidad específica de bytes en la memoria, y devuelve un puntero al primer byte de la región de memoria reservada. Si la reserva de memoria tiene éxito, se puede usar la región de memoria para almacenar datos. La función free() libera la memoria reservada previamente por la función malloc() o por cualquier otra función de asignación dinámica de memoria en C.
 Por ejemplo, el siguiente código en C asigna dinámicamente un arreglo de enteros utilizando la función malloc() y luego libera la memoria utilizando la función free():
 
-##int *arr = malloc(sizeof(int) * 10);  /* asigna memoria para un arreglo de 10 enteros */ 
+## int *arr = malloc(sizeof(int) * 10);  /* asigna memoria para un arreglo de 10 enteros */ 
 /* ... usa el arreglo ... */
 free(arr);  /* libera la memoria asignada para el arreglo */
 void* malloc(size_t size); 

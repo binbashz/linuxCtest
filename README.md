@@ -17,7 +17,7 @@ La memoria dinámica, por otro lado, es un tipo de memoria que se asigna en tiem
  ## sintaxys puntero:  tipo *nombre; 
  
  
-## La memoria dinámica, por otro lado, es un tipo de memoria que se asigna en tiempo de ejecución, en lugar de estar reservada de antemano.
+### La memoria dinámica, por otro lado, es un tipo de memoria que se asigna en tiempo de ejecución, en lugar de estar reservada de antemano.
  En C, puedes asignar memoria dinámica utilizando las funciones 'malloc', 'calloc' y 'realloc'. Cuando se asigna memoria dinámica, 
 se devuelve un puntero que apunta al primer byte de la memoria asignada.
 La gestión automática de memoria es una técnica utilizada en muchos lenguajes de programación modernos, como Java, Python y C#, para gestionar automáticamente la asignación y la liberación de memoria durante la ejecución del programa. Esta técnica permite a los desarrolladores centrarse en la lógica del programa en lugar de preocuparse por la gestión de memoria.

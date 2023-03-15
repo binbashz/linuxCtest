@@ -6,7 +6,7 @@
 
 Los punteros y la memoria dinámica son dos conceptos muy importantes en C para la programación en este lenguaje.
 
-Un puntero es una variable que contiene la dirección de memoria de otra variable. En C, se utilizan los operadores '&' y '*'(asterisco) para trabajar con punteros. El operador '&' se utiliza para obtener la dirección de memoria de una variable, mientras que el operador '*' (asterisco) se utiliza para acceder al valor almacenado en la dirección de memoria a la que apunta un puntero.
+Un puntero es una variable que contiene la dirección de memoria de otra variable. En C, se utilizan los operadores '&' y '* '(asterisco) para trabajar con punteros. El operador '&' se utiliza para obtener la dirección de memoria de una variable, mientras que el operador '*' (asterisco) se utiliza para acceder al valor almacenado en la dirección de memoria a la que apunta un puntero.
 
 La memoria dinámica, por otro lado, es un tipo de memoria que se asigna en tiempo de ejecución, en lugar de estar reservada de antemano. En C, puedes asignar memoria dinámica utilizando las funciones 'malloc', 'calloc' y 'realloc'.
 

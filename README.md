@@ -13,7 +13,10 @@ La memoria dinámica, por otro lado, es un tipo de memoria que se asigna en tiem
 ## Un puntero es una variable que contiene la dirección de memoria de otra variable. 
 ## En C, se utilizan los operadores '&' y '*' para trabajar con punteros.
 
- El operador '&' se utiliza para obtener la dirección de memoria de una variable, mientras que el operador '*' (asterisco) se utiliza para acceder al valor almacenado en la dirección de memoria a la que apunta un puntero. sintaxys puntero:  tipo *nombre; 
+ El operador '&' se utiliza para obtener la dirección de memoria de una variable, mientras que el operador '*' (asterisco) se utiliza para acceder al valor almacenado en la dirección de memoria a la que apunta un puntero.
+ ## sintaxys puntero:  tipo *nombre; 
+ 
+ 
 ## La memoria dinámica, por otro lado, es un tipo de memoria que se asigna en tiempo de ejecución, en lugar de estar reservada de antemano.
  En C, puedes asignar memoria dinámica utilizando las funciones 'malloc', 'calloc' y 'realloc'. Cuando se asigna memoria dinámica, 
 se devuelve un puntero que apunta al primer byte de la memoria asignada.
@@ -32,7 +35,7 @@ La función malloc() reserva una cantidad específica de bytes en la memoria, y 
 Por ejemplo, el siguiente código en C asigna dinámicamente un arreglo de enteros utilizando la función malloc() y luego libera la memoria utilizando la función free():
 
 
-## int *arr = malloc(sizeof(int) * 10);  /* asigna memoria para un arreglo de 10 enteros */ 
+ int *arr = malloc(sizeof(int) * 10);  /* asigna memoria para un arreglo de 10 enteros */ 
 /* ... usa el arreglo ... */
 free(arr);  /* libera la memoria asignada para el arreglo */
 void* malloc(size_t size); 

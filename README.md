@@ -35,7 +35,7 @@ La función malloc() reserva una cantidad específica de bytes en la memoria, y 
 Por ejemplo, el siguiente código en C asigna dinámicamente un arreglo de enteros utilizando la función malloc() y luego libera la memoria utilizando la función free():
 
 
- int *arr = malloc(sizeof(int) * 10);  /* asigna memoria para un arreglo de 10 enteros */ 
+#### int *arr = malloc(sizeof(int) * 10);  /* asigna memoria para un arreglo de 10 enteros */ 
 /* ... usa el arreglo ... */
 free(arr);  /* libera la memoria asignada para el arreglo */
 void* malloc(size_t size); 

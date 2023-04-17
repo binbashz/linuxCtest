@@ -95,3 +95,43 @@ Después de leer la línea ingresada por el usuario, se imprime el contenido del
 El programa continuará en este bucle infinito, imprimiendo "$ " en la pantalla,
  leyendo la línea ingresada por el usuario, e imprimiendo el contenido del buffer, hasta que sea interrumpido por el usuario o por alguna otra condición de salida del programa.
 Finalmente, se retorna 0 como indicación de que el programa ha finalizado 
+
+
+--------
+
+
+ programa en C que imprime "$ ", espera a que el usuario ingrese un comando y luego lo imprime en la siguiente línea utilizando la función 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	char *buffer = NULL; /* Puntero al buffer que contendrá la línea ingresada por el usuario */
+	size_t len = 0; /* Variable que almacenará el tamaño del buffer */
+	ssize_t read; /* Variable para almacenar el número de caracteres leídos por getline() */
+
+	while (1) /* Bucle infinito para mantener el programa en ejecución */
+	{
+		printf("$ "); /* Imprime "$ " en la pantalla */
+		fflush(stdout); /* Limpia el búfer de salida para asegurarse de que "$ " se muestre en la pantalla */
+
+		read = getline(&buffer, &len, stdin); /* Utiliza getline para leer la línea ingresada por el usuario y almacenarla en el buffer */
+
+		if (read == -1) /* Si getline devuelve -1, indica un error o el fin del archivo (EOF) */
+		{
+			printf("\n"); /* Imprime una nueva línea para separar el último comando ingresado del prompt "$ " */
+			break; /* Sale del bucle infinito para finalizar el programa */
+		}
+
+		printf("%s", buffer); /* Imprime el contenido del buffer, que es el comando ingresado por el usuario */
+	}
+
+	free(buffer); /* Libera la memoria asignada dinámicamente para el buffer */
+	buffer = NULL; /* Asigna NULL al puntero del buffer para evitar el acceso a memoria no válida */
+
+	return 0; /* Retorna 0 como indicación de que el programa ha finalizado correctamente */
+}
+
+
+Este programa utiliza getline() para leer la línea ingresada por el usuario y almacenarla en el buffer. Luego imprime el contenido del buffer, que es el comando ingresado por el usuario, y repite el proceso en un bucle infinito hasta que se encuentre con un error o el fin del archivo (EOF) indicado por getline(). Es importante leer el manual (man) de la función getline() y tener en cuenta la sección "RETURN VALUE" para saber cuándo detener la lectura de entrada, especialmente en caso de EOF (End-Of-File) que puede ocurrir al presionar Ctrl+D en la terminal.

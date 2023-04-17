@@ -73,21 +73,12 @@ Verificación de firmas.
 ## Hash Table
 
 
-The Hash table data structure stores elements in key-value pairs where
+La estructura de datos de la tabla Hash almacena elementos en pares clave-valor donde
 
-Key- unique integer that is used for indexing the values
-Value - data that are associated with keys.
+Clave- número entero único que se utiliza para indexar los valores Valor- datos que se asocian a las claves.
 
 ![Capture](https://user-images.githubusercontent.com/124454895/232366494-6e0140e2-37e5-4ed1-aa32-6cb04d677853.PNG)
 
-## Hashing (Hash Function)
 
-In a hash table, a new index is processed using the keys. And, the element corresponding to that key is stored in the index. This process is called **hashing**.
 
-Let k be a key and h(x) be a hash function.
 
-Here, h(k) will give us a new index to store the element linked with k.
-
-![Hash Table representation](https://www.programiz.com//cdn.programiz.com/sites/tutorial2program/files/Hash-2_0.png "Hash Table representation")
-
-Hash table Representation

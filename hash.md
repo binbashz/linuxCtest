@@ -67,4 +67,27 @@ Un esquema de este tipo generalmente consta de tres algoritmos de:
 Generación de claves;
 Firma que, dado un mensaje y una clave privada, genera la rúbrica electrónica;
 Verificación de firmas.
-Al momento de que el firmante firma un documento, este se crea utilizando la clave privada de la persona; el algoritmo matemático actúa como un cifrado, creando datos que coinciden con el documento firmado, llamado hash, y encriptando esa información.
+
+- Al momento de que el firmante firma un documento, este se crea utilizando la clave privada de la persona; el algoritmo matemático actúa como un cifrado, creando datos que coinciden con el documento firmado, llamado hash, y encriptando esa información.
+-----------------------------------------------------------------------------------------------------------------
+## Hash Table
+
+
+The Hash table data structure stores elements in key-value pairs where
+
+Key- unique integer that is used for indexing the values
+Value - data that are associated with keys.
+
+![Capture](https://user-images.githubusercontent.com/124454895/232366494-6e0140e2-37e5-4ed1-aa32-6cb04d677853.PNG)
+
+## Hashing (Hash Function)
+
+In a hash table, a new index is processed using the keys. And, the element corresponding to that key is stored in the index. This process is called **hashing**.
+
+Let k be a key and h(x) be a hash function.
+
+Here, h(k) will give us a new index to store the element linked with k.
+
+![Hash Table representation](https://www.programiz.com//cdn.programiz.com/sites/tutorial2program/files/Hash-2_0.png "Hash Table representation")
+
+Hash table Representation

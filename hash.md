@@ -67,4 +67,18 @@ Un esquema de este tipo generalmente consta de tres algoritmos de:
 Generación de claves;
 Firma que, dado un mensaje y una clave privada, genera la rúbrica electrónica;
 Verificación de firmas.
-Al momento de que el firmante firma un documento, este se crea utilizando la clave privada de la persona; el algoritmo matemático actúa como un cifrado, creando datos que coinciden con el documento firmado, llamado hash, y encriptando esa información.
+
+- Al momento de que el firmante firma un documento, este se crea utilizando la clave privada de la persona; el algoritmo matemático actúa como un cifrado, creando datos que coinciden con el documento firmado, llamado hash, y encriptando esa información.
+-----------------------------------------------------------------------------------------------------------------
+## Hash Table
+
+
+La estructura de datos de la tabla Hash almacena elementos en pares clave-valor donde
+
+Clave- número entero único que se utiliza para indexar los valores Valor- datos que se asocian a las claves.
+
+![Capture](https://user-images.githubusercontent.com/124454895/232366494-6e0140e2-37e5-4ed1-aa32-6cb04d677853.PNG)
+
+
+
+

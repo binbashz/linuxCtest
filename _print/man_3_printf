@@ -1,0 +1,75 @@
+.NAME
+_printf - formatted output conversion and printing functions
+
+.SYNOPSIS
+
+int _printf(const char *format, ...);
+
+
+.DESCRIPTION
+The printf function prints formatted output to the standard output stream (stdout). It accepts a format string, which specifies how the arguments are formatted and printed.
+
+The format string contains two types of characters: ordinary characters, which are printed unchanged, and format specifiers, which are replaced by the values of the corresponding arguments.
+
+The function supports the following format specifiers:
+%c: prints a single character.
+%s: prints a string.
+%d, %i: prints a signed integer in base 10.
+%%: prints a percent character.
+
+The format_specifier function matches the format specifier with the corresponding print function and calls it to print the argument. If there is no matching specifier, it prints the character '%' followed by the specifier character.
+
+The print_c function prints a single character.
+The print_s function prints a string.
+The print_d and print_i functions print a signed integer in base 10.
+The print_p function prints a percent character.
+
+The _print function is a helper function used to print integers recursively, one digit at a time.
+
+The _putchar function writes a single character to stdout.
+
+.PARAMETERS
+format - a pointer to the format string that specifies the format of the output.
+... - optional arguments, which depend on the format string.
+
+.RETURN VALUE
+The _printf function returns the number of characters printed, excluding the null byte used to end the output. If an error occurs, it returns -1.
+
+The format_specifier function returns the number of characters printed.
+
+The print_c, print_s, print_d, and print_i functions return the number of characters printed.
+
+The print_p function always returns 1.
+
+EXAMPLES
+Example usage of _printf:
+_printf("Hello, %s!\n", "world"); // prints "Hello, world!"
+
+Example usage of format specifiers:
+int x = 123;
+_printf("The value of x is %d.\n", x); // prints "The value of x is 123."
+
+Example usage of print_c:
+char c = 'H';
+print_c(c); // prints "H"
+
+Example usage of print_s:
+char *s = "world";
+print_s(s); // prints "world"
+
+Example usage of print_d and print_i:
+int n = -42;
+print_d(n); // prints "-42"
+print_i(n); // prints "-42"
+
+Example usage of print_p:
+print_p(NULL); // prints "%"
+
+.NOTES
+The printf function does not support all the format specifiers and flags available in the standard C library printf function. Only the specifiers and flags listed above are supported.
+
+The printf function and its associated functions are defined in "main.h".
+
+.AUTHOR
+Mauricio Correa
+Fabiana Tellechea

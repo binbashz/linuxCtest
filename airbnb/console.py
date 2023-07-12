@@ -67,7 +67,8 @@ class HBNBCommand(cmd.Cmd):
         """
         Create a new instance of BaseModel, save it, and print the id.
         """
-        # Método que maneja el comando "create". Crea una nueva instancia de la clase BaseModel o de una de sus subclases, la guarda y muestra el ID de la instancia creada.
+        # Método que maneja el comando "create". Crea una nueva instancia de la clase BaseModel o de una de sus subclases,
+        # la guarda y muestra el ID de la instancia creada.
 
         # Divide el argumento en una lista de palabras separadas.
         args_list = arg.split()
@@ -91,7 +92,8 @@ class HBNBCommand(cmd.Cmd):
         Show the string representation of an instance based
         on the class name and id.
         """
-        # Método que maneja el comando "show". Muestra la representación en cadena de una instancia basada en el nombre de la clase y el ID proporcionados.
+        # Método que maneja el comando "show". Muestra la representación en cadena de una instancia basada en el nombre de la clase y
+        # el ID proporcionados.
 
         # Divide el argumento en una lista de palabras separadas.
         args_list = arg.split()
@@ -119,7 +121,8 @@ class HBNBCommand(cmd.Cmd):
         """
         Destroy an instance based on the class name and id.
         """
-        # Método que maneja el comando "destroy". Destruye una instancia basada en el nombre de la clase y el ID proporcionados.
+        # Método que maneja el comando "destroy". Destruye una instancia basada en el nombre de la clase y
+        # el ID proporcionados.
 
         # Divide el argumento en una lista de palabras separadas.
         args_list = arg.split()
@@ -149,7 +152,8 @@ class HBNBCommand(cmd.Cmd):
         """
         Print string representation of all instances based on the class name.
         """
-        # Método que maneja el comando "all". Muestra la representación en cadena de todas las instancias basadas en el nombre de la clase.
+        # Método que maneja el comando "all". Muestra la representación en cadena de todas las instancias basadas
+        # en el nombre de la clase.
 
         # Divide el argumento en una lista de palabras separadas.
         args = arg.split()
@@ -178,7 +182,8 @@ class HBNBCommand(cmd.Cmd):
         """
         Update an instance based on the class name and id.
         """
-        # Método que maneja el comando "update". Actualiza una instancia basada en el nombre de la clase, el ID, el nombre del atributo y el valor proporcionados.
+        # Método que maneja el comando "update". Actualiza una instancia basada en el nombre de la clase, el ID,
+        # el nombre del atributo y el valor proporcionados.
 
         # Divide el argumento en una lista de palabras separadas.
         args_list = arg.split()

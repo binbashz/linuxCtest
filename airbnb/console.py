@@ -75,7 +75,7 @@ class HBNBCommand(cmd.Cmd):
         # Verifica si se proporcionó al menos una palabra en la lista.
         if len(args_list) < 1:
             print("** class name missing **")
-        # Verifica si la primera palabra en la lista está en las claves del diccionario de clases.
+        # Verifica si la primera palabra en la lista, está en las claves del diccionario de clases.
         elif args_list[0] in class_dict.keys():
             # Crea una nueva instancia de la clase correspondiente a la primera palabra en la lista.
             new_instance = class_dict[args_list[0]]()

@@ -1,1 +1,1 @@
-hi im your friend java, de king of the dom
+hi im your friend javascript, de king of the dom
